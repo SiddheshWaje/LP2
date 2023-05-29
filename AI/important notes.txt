@@ -1,0 +1,350 @@
+Notes
+Enter number of nodes in the graph: 6
+Enter number of edges in the graph: 7
+Enter the endpoints of edge 1: 0 1
+Enter the endpoints of edge 2: 0 2
+Enter the endpoints of edge 3: 1 3
+Enter the endpoints of edge 4: 1 4
+Enter the endpoints of edge 5: 2 4
+Enter the endpoints of edge 6: 3 5
+Enter the endpoints of edge 7: 4 5
+Enter 0 to perform DFS and 1 to perform BFS: 0
+Enter the node to search: 5
+
+A star
+start state-
+1 3 4
+-1 2 5
+6 7 8
+Goal state-
+1 3 4
+2 5 -1
+6 7 8s
+
+
+Prims ALgorithm
+Edge 0 - 0 : 0
+Edge 0 - 1 : 2
+Edge 0 - 2 : 0
+Edge 0 - 3 : 6
+Edge 0 - 4 : 0
+Edge 1 - 0 : 2
+Edge 1 - 1 : 0
+Edge 1 - 2 : 3
+Edge 1 - 3 : 8
+Edge 1 - 4 : 5
+Edge 2 - 0 : 0
+Edge 2 - 1 : 3
+Edge 2 - 2 : 0
+Edge 2 - 3 : 0
+Edge 2 - 4 : 7
+Edge 3 - 0 : 6
+Edge 3 - 1 : 8
+Edge 3 - 2 : 0
+Edge 3 - 3 : 0
+Edge 3 - 4 : 9
+Edge 4 - 0 : 0
+Edge 4 - 1 : 5
+Edge 4 - 2 : 7
+Edge 4 - 3 : 9
+Edge 4 - 4 : 0
+
+Output:
+Edge   Weight
+0 - 1   2
+1 - 2   3
+0 - 3   6
+1 - 4   5
+
+Graph color:
+Enter the number of vertices: 5
+Enter the number of edges: 6
+Enter the edges (vertex1 vertex2):
+0 1
+0 2
+1 2
+1 3
+2 3
+3 4
+
+Dijkstra
+Input:
+Number of vertices: 6
+Number of edges: 9
+
+Edges and their weights:
+Edge 1: 0 1 4
+Edge 2: 0 2 2
+Edge 3: 1 2 1
+Edge 4: 1 3 5
+Edge 5: 2 3 8
+Edge 6: 2 4 10
+Edge 7: 3 4 2
+Edge 8: 3 5 6
+Edge 9: 4 5 3
+
+celsius to farhenit
+public class Temperature {
+public static void Ctof(Decimal celsiusTemperature) {
+        Decimal fahrenheitTemperature = (celsiusTemperature * 9/5) + 32;
+        System.debug(fahrenheitTemperature.setScale(2));
+    }
+}
+
+calculator
+public class Calculator {
+public static Double add(Double a, Double b) {
+        System.debug(a+b);
+        return a + b;
+    }
+
+    public static Double subtract(Double a, Double b) {
+        System.debug(a-b);
+        return a - b;
+    }
+
+    public static Double multiply(Double a, Double b) {
+        System.debug(a*b);
+        return a * b;
+    }
+
+    public static Double divide(Double a, Double b) {
+        System.debug(a/b);
+        return a / b;
+    }
+}
+
+Palindrome
+public class Palind {
+   public void palindrome(String inputString){
+        
+        String reverseString ='';
+        reverseString = inputString.reverse();
+        
+        if(inputString.equals(reverseString)){
+            system.debug('String is Palindrome');
+        }
+        else{
+            system.debug('String is not Palindrome');
+        }   
+    }   
+}
+
+
+Reverse
+public class Reve {
+public void rever(String inputString){
+        
+        String reverseString ='';
+        reverseString = inputString.reverse();
+        system.debug(reverseString);
+}
+}
+
+execution for above code
+Reve reversed = new Reve();
+String input = 'vikram'; 
+
+reversed.rever(input);
+
+<------------- Event Management System ---------------->
+Event:
+
+Title: The title or name of the event.
+Description: A description or summary of the event.
+Date: The date on which the event is scheduled to take place.
+Time: The time at which the event will start.
+Venue: The location or venue where the event will be held.
+Organizers: The individuals or organizations responsible for organizing the event.
+Participants: The list of participants or attendees registered for the event.
+Tickets: Information about tickets, such as ticket types, prices, and availability.
+Agenda: The schedule or itinerary of the event, including sessions, speakers, and activities.
+Status: The current status of the event (upcoming, ongoing, completed, canceled, etc.).
+Attendee:
+
+Name: The name of the attendee.
+Email: The email address of the attendee.
+Phone: The phone number of the attendee.
+Registration Date: The date and time when the attendee registered for the event.
+Ticket Type: The type of ticket purchased by the attendee.
+Payment Status: The status of payment for the ticket (paid, pending, canceled, etc.).
+Check-in Status: The status of attendance/check-in for the event.
+Dietary Restrictions: Any dietary restrictions or special requirements of the attendee.
+Preferences: Any preferences or choices indicated by the attendee (e.g., session preferences, meal preferences).
+Speaker:
+
+Name: The name of the speaker.
+Bio: A brief biography or profile of the speaker.
+Topic: The topic or subject of the speaker's presentation.
+Session: The session or time slot assigned to the speaker.
+Contact Information: Contact details of the speaker (email, phone, social media links).
+Presentation Materials: Any presentation slides, documents, or additional materials provided by the speaker.
+Availability: The availability or confirmation of the speaker's participation.
+Venue:
+
+Name: The name or title of the venue.
+Address: The address or location of the venue.
+Capacity: The maximum capacity or number of attendees the venue can accommodate.
+Facilities: Available facilities or amenities at the venue (parking, seating arrangements, audiovisual equipment, etc.).
+Layout: The floor plan or layout of the venue, including seating arrangements, stages, and booths.
+Restrictions: Any specific restrictions or guidelines related to the venue (e.g., noise restrictions, age restrictions, alcohol restrictions).
+Organizer:
+
+Name: The name or title of the organizer.
+Email: The email address of the organizer.
+Phone: The phone number of the organizer.
+Website: The website or online presence of the organizer.
+Responsibilities: The specific responsibilities or roles of the organizer.
+Staff: Information about staff members or team members associated with the organizer.
+Contact Information: Contact details of the organizer (email, phone, office address).
+ 
+
+<---------------- Expense Management System ------------------------>
+Expense:
+
+Date: The date when the expense was incurred.
+Category: The category or type of expense (e.g., travel, food, accommodation).
+Amount: The amount spent on the expense.
+Description: A description or note providing more details about the expense.
+Payment Method: The method used for payment (e.g., cash, credit card, online payment).
+Receipt: An attachment or reference to the receipt associated with the expense.
+Currency: The currency in which the expense was made.
+Location: The location or place where the expense was incurred.
+Tags: Keywords or labels associated with the expense for easier categorization or search.
+Budget:
+
+Category: The category or type of budget (e.g., travel, marketing, office supplies).
+Amount: The allocated or planned amount for the budget category.
+Spent: The total amount spent in the budget category.
+Remaining: The remaining amount or budget available for the category.
+Start Date: The start date of the budget period.
+End Date: The end date of the budget period.
+Notifications: Settings for receiving notifications or alerts when the budget limit is reached or exceeded.
+Payment Method:
+
+Name: The name or title of the payment method (e.g., Cash, Credit Card, PayPal).
+Description: Additional details or notes about the payment method.
+Icon: An icon or image representing the payment method.
+Account Number: The account number or identifier associated with the payment method.
+Bank Name: The name of the bank or financial institution linked to the payment method.
+Expiration Date: For credit cards, the expiration date of the card.
+Billing Address: The billing address associated with the payment method.
+Report:
+
+Name: The name or title of the expense report.
+Date Range: The date range for which the report is generated.
+Expenses: A list of expenses included in the report.
+Total Amount: The total amount of expenses in the report.
+Summary: A summary or breakdown of expenses by category or other criteria.
+Approver: The person responsible for approving the expense report.
+Status: The status of the report (e.g., pending, approved, rejected).
+User:
+
+Name: The name of the user.
+Email: The email address of the user.
+Password: The password associated with the user account.
+Role: The role or level of access for the user (e.g., admin, employee).
+Profile Picture: An image or avatar representing the user.
+Expense History: The history of expenses submitted by the user.
+Budget Allocation: The budget allocated or assigned to the user (if applicable).
+
+<-------------- Survey And Feedback App ---------------------->
+Survey:
+
+Title: The title or name of the survey.
+Description: A description or introduction to the survey.
+Questions: A list of questions included in the survey.
+Start Date: The date when the survey becomes available.
+End Date: The date when the survey closes.
+Participants: The targeted participants or audience for the survey.
+Responses: The collection of responses submitted for the survey.
+Status: The current status of the survey (active, closed, draft).
+Question:
+
+Type: The type of question (e.g., multiple-choice, open-ended, rating scale).
+Text: The text of the question being asked.
+Options: For multiple-choice questions, the list of available options.
+Required: Indicates if the question is mandatory or optional.
+Position: The position or order of the question in the survey.
+Conditional Logic: Any conditional logic associated with the question (e.g., skip logic, branching).
+Response:
+
+Participant: The participant or respondent who submitted the response.
+Survey: The survey to which the response belongs.
+Submission Date: The date and time when the response was submitted.
+Answers: The collection of answers provided by the respondent for each question.
+Completion Status: Indicates if the response is complete or in progress.
+Additional Comments: Any additional comments or feedback provided by the respondent.
+Feedback:
+
+Title: The title or subject of the feedback.
+Description: A description or details of the feedback provided.
+Participant: The participant or user who submitted the feedback.
+Submission Date: The date and time when the feedback was submitted.
+Category: The category or topic to which the feedback is related.
+Status: The status of the feedback (open, in progress, resolved).
+Assigned To: The person or team assigned to review and address the feedback.
+Attachments: Any attachments or files associated with the feedback.
+User:
+
+Name: The name of the user.
+Email: The email address of the user.
+Role: The role or level of access for the user (e.g., admin, participant).
+Surveys: The surveys created or managed by the user.
+Responses: The responses submitted by the user.
+Feedback: The feedback provided by the user.
+Notifications: Settings for receiving notifications or alerts about surveys and feedback.
+
+<--------------- Training and Learning App ---------------->
+
+Course:
+
+Title: The title or name of the course.
+Description: A description or summary of the course.
+Instructor: The instructor or teacher delivering the course.
+Duration: The duration or length of the course.
+Topics: The list of topics or modules covered in the course.
+Prerequisites: Any prerequisites or requirements for taking the course.
+Resources: Additional resources or materials associated with the course (e.g., lecture slides, readings).
+Enrollment: Information about the number of enrolled students or participants.
+Progress: The progress status of the course for a specific user (e.g., completed, in progress).
+Lesson:
+
+Title: The title or name of the lesson.
+Description: A description or summary of the lesson content.
+Content: The actual content of the lesson (e.g., text, videos, interactive elements).
+Resources: Additional resources or materials associated with the lesson.
+Quizzes/Assessments: Quizzes or assessments related to the lesson content.
+Duration: The estimated duration or time required to complete the lesson.
+Completion Status: Indicates if the lesson has been completed or not.
+Next Lesson: The reference or link to the next lesson in the course sequence.
+User:
+
+Name: The name of the user.
+Email: The email address of the user.
+Role: The role or level of access for the user (e.g., student, instructor, admin).
+Courses Enrolled: The courses in which the user is currently enrolled.
+Completed Courses: The courses that the user has completed.
+Progress: The progress status of the user in each course or lesson.
+Certificates: Certificates or achievements earned by the user upon course completion.
+Notifications: Settings for receiving notifications or updates about courses and progress.
+Discussion Forum:
+
+Title: The title or name of the discussion forum.
+Description: A description or summary of the forum's purpose.
+Topics/Threads: The list of discussion topics or threads within the forum.
+Posts: Individual posts or messages within each topic/thread.
+Participants: The users who are actively participating in the discussion.
+Likes/Upvotes: The number of likes or upvotes received by posts.
+Replies: Responses or replies to posts within the forum.
+Moderators: The users with moderator privileges who manage and moderate the forum.
+Assessment/Quiz:
+
+Title: The title or name of the assessment or quiz.
+Questions: The list of questions included in the assessment.
+Options: For multiple-choice questions, the list of available options.
+Correct Answers: The correct answers for each question.
+Scoring/Ranking: The scoring or ranking system used for assessments.
+Time Limit: The time limit for completing the assessment.
+Results: The results or feedback provided to users after completing the assessment.
+Retake Options: Rules or options for retaking the assessment if allowed.
